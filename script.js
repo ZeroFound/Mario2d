@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const assets = {
         mario: new Image(),
         pipe: new Image(),
-        jumpSound: new Audio('jump.mp3'),
-        gameOverSound: new Audio('gameover.mp3')
+        jumpSound: new Audio('sound/jump.mp3'),
+        gameOverSound: new Audio('sound/gameover.mp3')
     };
 
-    assets.mario.src = 'mario.png';
-    assets.pipe.src = 'pipe.png';
+    assets.mario.src = 'assets/mario.png';
+    assets.pipe.src = 'assets/pipe.png';
 
     // Properti pemain disesuaikan
     const player = {
