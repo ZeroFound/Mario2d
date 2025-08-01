@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Mario Jump</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="start-screen" id="startScreen">
+            <h1>Super Mario Jump</h1>
+            <p>Tekan tombol spasi untuk mulai!</p>
+        </div>
+
+        <div class="game-over-screen" id="gameOverScreen">
+            <h1>GAME OVER</h1>
+            <p id="finalScore">Skor Akhir: 0</p>
+            <button id="restartButton">Main Lagi</button>
+        </div>
+        
+        <div class="game-wrapper" id="gameWrapper">
+            <canvas id="gameCanvas"></canvas>
+            <div id="countdown"></div>
+            <div class="game-ui">
+                <div class="score-display">Skor: <span id="score">0</span></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
